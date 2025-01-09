@@ -1,6 +1,6 @@
 all:
   hosts:
-    98.81.189.112:
-      ansible_ssh_user: ubuntu
-      ansible_ssh_private_key_file: /home/alex/Downloads/SSH-aws1.pem
+    <IP>:
+      ansible_ssh_user: username
+      ansible_ssh_private_key_file: /path/
 

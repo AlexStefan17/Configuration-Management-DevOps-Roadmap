@@ -1,0 +1,12 @@
+- name: Upload static HTML tarball
+  copy:
+    src: files/site.tar.gz
+    dest: /tmp/site.tar.gz
+  become: yes
+
+- name: Extract static HTML tarball
+  unarchive:
+    src: /tmp/site.tar.gz
+    dest: /var/www/html
+    remote_src: yes
+  become: yes
